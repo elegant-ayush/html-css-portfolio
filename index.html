@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio - Ayush Parmar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Ayush Parmar</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <img src="profile.jpg" alt="[Your Name]" class="profile-pic">
+            <h1>Hello, I'm Ayush Parmar</h1>
+            <p>A Creative Designer & Developer</p>
+            <a href="#about" class="btn">Know More</a>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="profile.jpg" alt="[Your Name]" class="about-pic">
+            <p>I'm a creative designer based in India with hands-on experience in both front-end and back-end
+                development. My expertise includes JavaScript, React, HTML, CSS, UI/UX, PHP, and Python. I am passionate
+                about delivering high-quality code and user experiences.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">React</div>
+            <div class="skill-card">HTML/CSS</div>
+            <div class="skill-card">UI/UX Design</div>
+            <div class="skill-card">PHP</div>
+            <div class="skill-card">Python</div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="work2.png" alt="Project 1">
+                <div class="project-info">
+                    <h3>Elegant.o Foods</h3>
+                    <p>Elegant.o Foods is a modern and intuitive food ordering platform designed to enhance user
+                        experience in the food delivery industry. Built using HTML, CSS, and React, the website offers a
+                        sleek and user-friendly interface for browsing menus, placing orders, and tracking deliveries.
+                        The site provides real-time updates, secure payment gateways, and responsive design, ensuring
+                        smooth usability on both mobile and desktop devices.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="work1.png" alt="Project 2">
+                <div class="project-info">
+                    <h3>Elegant Film's</h3>
+                    <p>Elegant Film's is a dynamic movie watchlist platform where users can easily explore, add, and
+                        manage movies they want to watch. Built using HTML, Tailwind CSS, and ReactJS, the website
+                        offers a sleek interface that provides users with seamless navigation and interactivity. Whether
+                        looking up trending movies or organizing a personalized watchlist, Elegant Film's delivers a
+                        smooth and enjoyable experience.</p>
+                </div>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <p>Email: rbsayushmca1611@gmail.com</p>
+        <p>LinkedIn: <a
+                href="https://www.linkedin.com/in/ayush-parmar-0800122a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                LinkedIn</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 [Your Name]. All Rights Reserved.</p>
+    </footer>
+
+      <!-- Other sections of your website -->
+
+    <!-- JavaScript for the burger menu and scroll effect -->
+    <script>
+        // Burger menu functionality
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('nav ul');
+
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+
+        // Change header background on scroll
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+</body>
+
+</html>
